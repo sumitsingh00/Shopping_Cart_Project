@@ -5,6 +5,7 @@ import { NavLink } from "react-router-dom";// navlink is use to navigate the thr
 const Navbar = () => {
 
   const {cart} = useSelector((state) => state);
+  // navbar se cart wala array nikaal liya
 
   return (
     <div >
