@@ -12,7 +12,9 @@ const Cart = () => {
 
 
   // it is use to calculte total sum of cart
+  
   const [totalAmount, setTotalAmount] = useState(0);
+  // useEffect hook spacfic componet ko re-rneder krega
   useEffect( () => {
     setTotalAmount( cart.reduce( (acc, curr) => acc + curr.price,0) );
   }, [cart])
@@ -26,6 +28,8 @@ const Cart = () => {
 
       <div className="lg:w-[70%]">
         {
+
+          // item means spe
           cart.map( (item,index) => {
             return <CartItem key={item.id} item={item} itemIndex={index} />
           } )
