@@ -11,6 +11,7 @@ const CartItem = ({item}) => {
     dispatch(remove(item.id));
     toast.error("Item Removed");
   }
+  //new commit
 
   return (
     <div className="p-4 border-b-2 last:border-none border-slate-700">
